@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('repeatrack-theme');
+          if (t === 'light') document.documentElement.classList.remove('dark');
+          else document.documentElement.classList.add('dark');
+        } catch (e) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+
+    <title>RepeaTrack — Track Customers For Your Offline Business</title>
+    <meta
+      name="description"
+      content="RepeaTrack: run your storefront — visits, services, bookings, WhatsApp bring-back, loyalty, and reports. Dark console UI built for busy owners."
+    />
+    <meta
+      name="keywords"
+      content="RepeaTrack, customer retention, salon booking, visit tracking, WhatsApp marketing, SMB, loyalty, India"
+    />
+    <meta name="application-name" content="RepeaTrack" />
+    <meta name="author" content="RepeaTrack" />
+
+    <!-- Brand chrome: matches admin sidebar / shell (#0a0d0c) -->
+    <meta name="theme-color" content="#0a0d0c" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f4f6f5" media="(prefers-color-scheme: light)" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RepeaTrack" />
+    <meta property="og:title" content="RepeaTrack — Track Customers For Your Offline Business" />
+    <meta
+      property="og:description"
+      content="Visits, bookings, inactive customers, WhatsApp templates, and analytics — one console for your business."
+    />
+    <meta property="og:locale" content="en_IN" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="RepeaTrack — Track Customers For Your Offline Business" />
+    <meta
+      name="twitter:description"
+      content="Visits, bookings, WhatsApp bring-back, loyalty, and reports for your storefront."
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="RepeaTrack" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="mask-icon" href="/favicon.svg" color="#059669" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
